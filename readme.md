@@ -20,6 +20,8 @@
 - `A` insert mode end of the line
 - `O` insert mode new line above
 - `v` visual mode
+- `V` visual line mode (select by lines)
+- `Ctrl + v` visial block mode
 - `d` delete selection
 - `dd` delete whole line
 - `D` delete from the cursor trhough the end
@@ -51,7 +53,7 @@
 
 ### Useful in codding
 - `ci{simbol}' change innter text of the simbol
-- ` 
+- `.` repeat the last command that you execute 
 ## Move
 - `JKLH` optional arrows
 - `arrow number` move the cursor number of times on the direction of the arrow
@@ -79,9 +81,33 @@ settings permanent create a file at `vim ~/.config/nvim/init.vim`
 - `:set shiftwidth=4` shift
 - `:colorscheme {press_tab}` select color 
 
+## Intermediate features
 
+### Indentation
+- `>>` Indentation to the rigth
+- `<<` Indentation to the left
+- `==` Automatic indentation
+- `gg=G` Automatic indentation from the begining through the end
 
+### Searching
+- `:/{word}` search word
+- `n` next word
+- `N` backward jump
+- `#` move up with the word selected (visual mode)
+- `*` move down with the word selected (visual mode)
 
+### Replacing
+- `:%s/{word}/{newWord}/g` replace all the occurences of word to newWord
+- `:s/{word}/{newWord}/g` replace occurences of word on a selected text
 
+### Marking locations 
+- `m{caracter}` mark a place on the code with the caracter alias
+- `'{caracter}` go to the place 
+- `zz` center the code
 
-
+### Macros and registers
+- `:reg` see the registeris
+- `"{registerNumber}p` choose a register and paste it
+- `{registerNumber}yy:reg` overwrite register on register number with new command
+- `q{caracter}` record a macro -> `q` quit macro recording`
+- `@{caracter}` execute the macro
