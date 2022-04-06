@@ -1,8 +1,2 @@
-:set number
-:set relativenumber
-:set tabstop=4
-:set shiftwidth=4
-:set autoindent
-:set mouse=a
-
-:colorscheme delek
+source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/keys/mappings.vim

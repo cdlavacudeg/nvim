@@ -2,9 +2,13 @@
 ## Instalation
 `sudo apt install neovim`
 
+### Ubuntu Stable
+`sudo add-apt-repository ppa:neovim-ppa/stable`
+`sudo apt-get update`
+
 ## Commands
 
-- `nvim {name_file}` open the file and if it does'nt exist create a blan new one.
+- `nvim {name_file}` open the file and if it does'nt exist create a blank one.
 - `:q` quit vim
 - `:q!` quit and dismiss all the changes
 - `:!{command}` execute a terminal command
