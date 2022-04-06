@@ -75,15 +75,6 @@
 - `:{number}` jump to the number line
 
 
-## Configuration 
-settings permanent create a file at `vim ~/.config/nvim/init.vim`
- 
-- `:set number` line numbers
-- `:set relativenumber` relative numbers for better movement through the file
-- `:set mouse=a` active mouse
-- `:set tabstop=4` tab
-- `:set shiftwidth=4` shift
-- `:colorscheme {press_tab}` select color 
 
 ## Intermediate features
 
@@ -115,3 +106,9 @@ settings permanent create a file at `vim ~/.config/nvim/init.vim`
 - `{registerNumber}yy:reg` overwrite register on register number with new command
 - `q{caracter}` record a macro -> `q` quit macro recording`
 - `@{caracter}` execute the macro
+
+# [Configuration](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
+
+settings permanent create a file at `vim ~/.config/nvim/init.lua`
+create folder for configurations on `lua/{user}`
+
