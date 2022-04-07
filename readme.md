@@ -56,7 +56,7 @@
 - `yiw` yank in a word, copy the word
 
 ### Useful in codding
-- `ci{simbol}' change innter text of the simbol
+- `ci{simbol}` change innter text of the simbol
 - `.` repeat the last command that you execute 
 ## Move
 - `JKLH` optional arrows
