@@ -74,7 +74,9 @@
 - `{number}G` jump to the number line
 - `:{number}` jump to the number line
 
-
+## Window
+- `:vsplit` Vertical split
+- `:split` Horizontal split
 
 ## Intermediate features
 
@@ -110,5 +112,6 @@
 # [Configuration](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 
 settings permanent create a file at `vim ~/.config/nvim/init.lua`
+
 create folder for configurations on `lua/{user}`
 
