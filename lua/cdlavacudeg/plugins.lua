@@ -45,6 +45,8 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use {'iamcco/markdown-preview.nvim',ft = 'markdown',run = 'cd app && npm install'} -- Markdown preview 
+  use "LunarVim/onedarker.nvim" -- Colorscheme onedarker
+  use "joshdick/onedark.vim" --Colorscheme onedark
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
