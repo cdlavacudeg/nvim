@@ -116,8 +116,12 @@ settings permanent create a file at `vim ~/.config/nvim/init.lua`
 
 create folder for configurations on `lua/{user}`
 
-### [How to do 90% of What Plugins do](https://www.youtube.com/watch?v=XA2WjJbmmoM&list=PLOtQYb9WRfK_gzHJrE_sEbplghJsQXowZ&index=12)
-### [Nvim From Scrath](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
-## Finding Files
+
+# Links
+
+- [How to do 90% of What Plugins do](https://www.youtube.com/watch?v=XA2WjJbmmoM&list=PLOtQYb9WRfK_gzHJrE_sEbplghJsQXowZ&index=12)
+- [Nvim From Scrath](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
+
+- [Awesome Nvim](https://github.com/rockerBOO/awesome-neovim)
 
 

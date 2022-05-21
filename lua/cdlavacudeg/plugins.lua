@@ -46,6 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use {'iamcco/markdown-preview.nvim',ft = 'markdown',run = 'cd app && npm install'} -- Markdown preview
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+  use "numToStr/Comment.nvim"
 
   -- Colorschemes
   use "LunarVim/onedarker.nvim" -- Colorscheme onedarker
@@ -71,12 +72,15 @@ return packer.startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 
-  
+
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+  -- comments
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
