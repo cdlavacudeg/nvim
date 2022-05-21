@@ -105,7 +105,8 @@
 ### Macros and registers
 - `:reg` see the registeris
 - `"{registerNumber}p` choose a register and paste it
-- `{registerNumber}yy:reg` overwrite register on register number with new command
+- `{registerNumber}yy:reg` overwrite register on register number with new
+  command
 - `q{caracter}` record a macro -> `q` quit macro recording`
 - `@{caracter}` execute the macro
 
@@ -114,4 +115,9 @@
 settings permanent create a file at `vim ~/.config/nvim/init.lua`
 
 create folder for configurations on `lua/{user}`
+
+# [How to do 90% of What Plugins do](https://www.youtube.com/watch?v=XA2WjJbmmoM&list=PLOtQYb9WRfK_gzHJrE_sEbplghJsQXowZ&index=12)
+# [Nvim From Scrath](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
+## Finding Files
+
 
