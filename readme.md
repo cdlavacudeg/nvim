@@ -1,7 +1,7 @@
 # [Vim Tutorial for Beginners](https://www.youtube.com/watch?v=RZ4p-saaQkc&list=PLOtQYb9WRfK8a-eOy-y-svugArcIiGiqI&index=1) 
 ## Instalation
 `sudo apt install neovim`
-
+ 
 ### Ubuntu Stable
 `sudo add-apt-repository ppa:neovim-ppa/stable`
 `sudo apt-get update`
@@ -116,8 +116,8 @@ settings permanent create a file at `vim ~/.config/nvim/init.lua`
 
 create folder for configurations on `lua/{user}`
 
-# [How to do 90% of What Plugins do](https://www.youtube.com/watch?v=XA2WjJbmmoM&list=PLOtQYb9WRfK_gzHJrE_sEbplghJsQXowZ&index=12)
-# [Nvim From Scrath](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
+### [How to do 90% of What Plugins do](https://www.youtube.com/watch?v=XA2WjJbmmoM&list=PLOtQYb9WRfK_gzHJrE_sEbplghJsQXowZ&index=12)
+### [Nvim From Scrath](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 ## Finding Files
 
 
