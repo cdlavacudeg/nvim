@@ -5,3 +5,4 @@ end
 
 require("cdlavacudeg.lsp.lsp-installer")
 require("cdlavacudeg.lsp.handlers").setup()
+require("cdlavacudeg.lsp.null-ls")

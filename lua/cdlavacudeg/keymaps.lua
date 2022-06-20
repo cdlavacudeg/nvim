@@ -21,7 +21,7 @@ vim.g.maplocalleader = " "
 -- Leader Mappings --
 keymap("n","<leader>e",":NvimTreeToggle<CR>",opts) --NvimTree
 keymap("n","<leader>c",":Bdelete<CR>",opts) -- Buffer close
-
+keymap("n","<leader>f",":Format<CR>",opts) -- Buffer close
 
 -- Press Ctrl-s to save
 keymap("i", "<C-s>","<C-o>:w<Enter>",opts)
