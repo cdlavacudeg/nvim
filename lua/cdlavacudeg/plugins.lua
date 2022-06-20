@@ -51,6 +51,7 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-tree.lua" -- File explorer
   use "akinsho/bufferline.nvim" -- Buffers,tabs,windows
   use "moll/vim-bbye" -- Buffers,tabs,windows
+  use "nvim-lualine/lualine.nvim" -- Lua line
   -- Colorschemes
   use "LunarVim/onedarker.nvim" -- Colorscheme onedarker
   use "joshdick/onedark.vim" --Colorscheme onedark
