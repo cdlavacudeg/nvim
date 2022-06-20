@@ -49,7 +49,8 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons" -- Icons nvim-tree
   use "kyazdani42/nvim-tree.lua" -- File explorer
-
+  use "akinsho/bufferline.nvim" -- Buffers,tabs,windows
+  use "moll/vim-bbye" -- Buffers,tabs,windows
   -- Colorschemes
   use "LunarVim/onedarker.nvim" -- Colorscheme onedarker
   use "joshdick/onedark.vim" --Colorscheme onedark

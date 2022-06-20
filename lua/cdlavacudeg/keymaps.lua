@@ -20,6 +20,7 @@ vim.g.maplocalleader = " "
 
 -- Leader Mappings --
 keymap("n","<leader>e",":NvimTreeToggle<CR>",opts) --NvimTree
+keymap("n","<leader>c",":Bdelete<CR>",opts) -- Buffer close
 
 
 -- Press Ctrl-s to save
