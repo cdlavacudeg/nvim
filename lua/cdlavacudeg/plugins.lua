@@ -52,6 +52,7 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim" -- Buffers,tabs,windows
   use "moll/vim-bbye" -- Buffers,tabs,windows
   use "nvim-lualine/lualine.nvim" -- Lua line
+  use "akinsho/toggleterm.nvim" -- Terminal toggle
   -- Colorschemes
   use "LunarVim/onedarker.nvim" -- Colorscheme onedarker
   use "joshdick/onedark.vim" --Colorscheme onedark
