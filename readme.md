@@ -1,4 +1,4 @@
-# [Vim Tutorial for Beginners](https://www.youtube.com/watch?v=RZ4p-saaQkc&list=PLOtQYb9WRfK8a-eOy-y-svugArcIiGiqI&index=1) 
+# [Vim Tutorial for Beginners](https://www.youtube.com/watch?v=RZ4p-saaQkc&list=PLOtQYb9WRfK8a-eOy-y-svugArcIiGiqI&index=1)# [Nvim from Scratch](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ) 
 ## Instalation
 `sudo apt install neovim`
  
@@ -13,6 +13,7 @@
 - `:q!` quit and dismiss all the changes
 - `:!{command}` execute a terminal command
 - `:wq` Write and quit
+- `:bd` Quit buffer 
 
 ## Modes
 - `:` starts a command (normal mode)

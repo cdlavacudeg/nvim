@@ -19,7 +19,7 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Leader Mappings --
-keymap("n","<leader>e",":Lex 30<CR>",opts)
+keymap("n","<leader>e",":NvimTreeToggle<CR>",opts) --NvimTree
 
 
 -- Press Ctrl-s to save

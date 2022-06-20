@@ -46,7 +46,9 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use {'iamcco/markdown-preview.nvim',ft = 'markdown',run = 'cd app && npm install'} -- Markdown preview
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-  use "numToStr/Comment.nvim"
+  use "numToStr/Comment.nvim" -- Easily comment stuff
+  use "kyazdani42/nvim-web-devicons" -- Icons nvim-tree
+  use "kyazdani42/nvim-tree.lua" -- File explorer
 
   -- Colorschemes
   use "LunarVim/onedarker.nvim" -- Colorscheme onedarker
@@ -84,6 +86,8 @@ return packer.startup(function(use)
   -- Git 
   use "lewis6991/gitsigns.nvim"
 
+  -- editer config 
+  use "gpanders/editorconfig.nvim"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
