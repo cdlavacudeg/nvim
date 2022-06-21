@@ -21,7 +21,9 @@ local options = {
   timeoutlen = 1000,                        -- time to wait for a mapped sequence to complete (in milliseconds)
   undofile = true,                         -- enable persistent undo
   updatetime = 300,                        -- faster completion (4000ms default)
-  writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
+  writebackup = false,                     -- if a file is being edited by
+                                           --another program (or was written to file while editing with another program),
+                                           --it is not allowed to be edited
   expandtab = true,                        -- convert tabs to spaces
   shiftwidth = 2,                          -- the number of spaces inserted for each indentation
   tabstop = 2,                             -- insert 2 spaces for a tab
@@ -34,6 +36,7 @@ local options = {
   scrolloff = 8,                           
   --sidescrolloff = 8,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
+  tw=120                                  --textwidth
 }
 
 vim.opt.shortmess:append "c"
