@@ -56,6 +56,7 @@ return packer.startup(function(use)
   -- Colorschemes
   use "LunarVim/onedarker.nvim" -- Colorscheme onedarker
   use "joshdick/onedark.vim" --Colorscheme onedark
+  use "folke/tokyonight.nvim" --Colorscheme tokyonight
 
 -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
