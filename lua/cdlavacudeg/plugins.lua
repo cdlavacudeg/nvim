@@ -40,20 +40,28 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
-  -- My plugins here
+  -- Packer
   use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
+
+  -- Needed to load first
+  use "lewis6991/impatient.nvim" -- Speed up loading modules in Neovim 
+  use "nathom/filetype.nvim"  -- Speed up nvim startup time
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  use "kyazdani42/nvim-web-devicons" -- Icons
+
+  -- Plugins
+  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use {'iamcco/markdown-preview.nvim',ft = 'markdown',run = 'cd app && npm install'} -- Markdown preview
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
-  use "kyazdani42/nvim-web-devicons" -- Icons nvim-tree
   use "kyazdani42/nvim-tree.lua" -- File explorer
   use "akinsho/bufferline.nvim" -- Buffers,tabs,windows
   use "moll/vim-bbye" -- Buffers,tabs,windows
   use "nvim-lualine/lualine.nvim" -- Lua line
   use "akinsho/toggleterm.nvim" -- Terminal toggle
-  -- Colorschemes
+
+
+  -- Themes
   use "LunarVim/onedarker.nvim" -- Colorscheme onedarker
   use "joshdick/onedark.vim" --Colorscheme onedark
   use "folke/tokyonight.nvim" --Colorscheme tokyonight
