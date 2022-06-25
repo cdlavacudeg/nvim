@@ -52,7 +52,6 @@ return packer.startup(function(use)
   -- Plugins
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use {'iamcco/markdown-preview.nvim',ft = 'markdown',run = 'cd app && npm install'} -- Markdown preview
-  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-tree.lua" -- File explorer
   use "akinsho/bufferline.nvim" -- Buffers,tabs,windows
@@ -60,13 +59,20 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim" -- Lua line
   use "akinsho/toggleterm.nvim" -- Terminal toggle
 
-
   -- Themes
   use "LunarVim/onedarker.nvim" -- Colorscheme onedarker
   use "joshdick/onedark.vim" --Colorscheme onedark
   use "folke/tokyonight.nvim" --Colorscheme tokyonight
+  
+  -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use { "p00f/nvim-ts-rainbow" }
+  use "windwp/nvim-ts-autotag"
 
--- cmp plugins
+  -- cmp
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
@@ -75,7 +81,8 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
 
-  -- snippets
+  -- snippets & Language & Syntax
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
@@ -85,16 +92,15 @@ return packer.startup(function(use)
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "ray-x/lsp_signature.nvim" -- function signature when you type
-  
+  use "simrat39/symbols-outline.nvim"
+  use {
+    "folke/trouble.nvim",
+    cmd = "TroubleToggle",
+  }
+
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 
-
-  -- Treesitter
-  use {
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  }
   -- comments
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
