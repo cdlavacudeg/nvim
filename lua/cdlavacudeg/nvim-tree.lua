@@ -54,11 +54,11 @@ nvim_tree.setup {
   },
   filters = {
     dotfiles = false,
-    custom = {'^.env$'},
+    custom = {},
   },
   git = {
     enable = true,
-    ignore = true,
+    ignore = false,
     timeout = 500,
   },
   view = {

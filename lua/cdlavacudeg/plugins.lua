@@ -63,7 +63,10 @@ return packer.startup(function(use)
   use "LunarVim/onedarker.nvim" -- Colorscheme onedarker
   use "joshdick/onedark.vim" --Colorscheme onedark
   use "folke/tokyonight.nvim" --Colorscheme tokyonight
-  
+
+  -- CSS Plugin
+  use "ap/vim-css-color" -- Color name highlighter
+
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",

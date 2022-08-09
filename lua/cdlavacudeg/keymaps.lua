@@ -21,7 +21,7 @@ vim.g.maplocalleader = " "
 -- Leader Mappings --
 keymap("n","<leader>e",":NvimTreeToggle<CR>",opts) --NvimTree
 keymap("n","<leader>c",":Bdelete<CR>",opts) -- Buffer close
-keymap("n","<leader>f",":lua vim.lsp.buf.formatting_sync()<CR>",opts) -- Buffer close
+keymap("n","<leader>f",":lua vim.lsp.buf.formatting_sync(nil,10000)<CR>",opts) -- Buffer close
 keymap("n","<leader>t",":TroubleToggle<CR>",opts) -- Open/Close TroubelToggle
 keymap("n","<leader>g",":SymbolsOutline<CR>",opts) -- Open/Close SymbolOutline
 
