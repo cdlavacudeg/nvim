@@ -20,10 +20,38 @@ vim.g.maplocalleader = " "
 
 -- Leader Mappings --
 keymap("n","<leader>e",":NvimTreeToggle<CR>",opts) --NvimTree
-keymap("n","<leader>c",":Bdelete<CR>",opts) -- Buffer close
+keymap("n","<leader>b",":Bdelete<CR>",opts) -- Buffer close
 keymap("n","<leader>f",":lua vim.lsp.buf.formatting_sync(nil,10000)<CR>",opts) -- Buffer close
 keymap("n","<leader>t",":TroubleToggle<CR>",opts) -- Open/Close TroubelToggle
 keymap("n","<leader>g",":SymbolsOutline<CR>",opts) -- Open/Close SymbolOutline
+
+-- Delete without overwriting register --
+keymap("n","d","\"_d",opts)
+keymap("v","d","\"_d",opts)
+keymap("n","D","\"_D",opts)
+keymap("v","D","\"_D",opts)
+keymap("n","c","\"_c",opts)
+keymap("v","c","\"_c",opts)
+keymap("n","C","\"_C",opts)
+keymap("v","C","\"_C",opts)
+keymap("n","x","\"_x",opts)
+keymap("v","x","\"_x",opts)
+keymap("n","X","\"_X",opts)
+keymap("v","X","\"_X",opts)
+
+keymap("n","<leader>d","d",opts)
+keymap("v","<leader>d","d",opts)
+keymap("n","<leader>D","D",opts)
+keymap("v","<leader>D","D",opts)
+keymap("n","<leader>c","c",opts)
+keymap("v","<leader>c","c",opts)
+keymap("n","<leader>C","C",opts)
+keymap("v","<leader>C","C",opts)
+keymap("n","<leader>x","x",opts)
+keymap("v","<leader>x","x",opts)
+keymap("n","<leader>X","X",opts)
+keymap("v","<leader>X","X",opts)
+
 
 -- Press Ctrl-s to save
 keymap("i", "<C-s>","<C-o>:w<Enter>",opts)
