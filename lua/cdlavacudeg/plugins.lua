@@ -59,6 +59,9 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim" -- Lua line
   use "akinsho/toggleterm.nvim" -- Terminal toggle
 
+  -- Prisma ORM
+  use "pantharshit00/vim-prisma"
+
   -- Themes
   use "LunarVim/onedarker.nvim" -- Colorscheme onedarker
   use "joshdick/onedark.vim" --Colorscheme onedark
