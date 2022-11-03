@@ -1,8 +1,15 @@
-# [Vim Tutorial for Beginners](https://www.youtube.com/watch?v=RZ4p-saaQkc&list=PLOtQYb9WRfK8a-eOy-y-svugArcIiGiqI&index=1)# [Nvim from Scratch](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ) 
+# [Vim Tutorial for Beginners](https://www.youtube.com/watch?v=RZ4p-saaQkc&list=PLOtQYb9WRfK8a-eOy-y-svugArcIiGiqI&index=1)# [Nvim from Scratch](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
+
 ## Instalation
+
 `sudo apt install neovim`
- 
+
+## Unistall configurations
+
+`rm -rf ~/.config/nvim rm -rf ~/.local/share/nvim rm -rf ~/.cache/nvim`
+
 ### Ubuntu Stable
+
 `sudo add-apt-repository ppa:neovim-ppa/stable`
 `sudo apt-get update`
 
@@ -13,9 +20,10 @@
 - `:q!` quit and dismiss all the changes
 - `:!{command}` execute a terminal command
 - `:wq` Write and quit
-- `:bd` Quit buffer 
+- `:bd` Quit buffer
 
 ## Modes
+
 - `:` starts a command (normal mode)
 - `ESC` get out of the last mode
 - 'i` enters the insert mode, you can insert text before the cursor
@@ -39,6 +47,7 @@
 - `r` Replace mode
 
 ## Key bidings
+
 - `u` In normal mode, undid the action
 - `{number}u` normal mode, number of undos back
 - `ctrl+r` normal mode, redo
@@ -57,9 +66,12 @@
 - `yiw` yank in a word, copy the word
 
 ### Useful in codding
+
 - `ci{simbol}` change innter text of the simbol
-- `.` repeat the last command that you execute 
+- `.` repeat the last command that you execute
+
 ## Move
+
 - `JKLH` optional arrows
 - `arrow number` move the cursor number of times on the direction of the arrow
 - `e` end of the word
@@ -76,18 +88,21 @@
 - `:{number}` jump to the number line
 
 ## Window
+
 - `:vsplit` Vertical split
 - `:split` Horizontal split
 
 ## Intermediate features
 
 ### Indentation
+
 - `>>` Indentation to the rigth
 - `<<` Indentation to the left
 - `==` Automatic indentation
 - `gg=G` Automatic indentation from the begining through the end
 
 ### Searching
+
 - `:/{word}` search word
 - `n` next word
 - `N` backward jump
@@ -95,15 +110,18 @@
 - `*` move down with the word selected (visual mode)
 
 ### Replacing
+
 - `:%s/{word}/{newWord}/g` replace all the occurences of word to newWord
 - `:s/{word}/{newWord}/g` replace occurences of word on a selected text
 
-### Marking locations 
+### Marking locations
+
 - `m{caracter}` mark a place on the code with the caracter alias
-- `'{caracter}` go to the place 
+- `'{caracter}` go to the place
 - `zz` center the code
 
 ### Macros and registers
+
 - `:reg` see the registeris
 - `"{registerNumber}p` choose a register and paste it
 - `{registerNumber}yy:reg` overwrite register on register number with new
@@ -117,12 +135,9 @@ settings permanent create a file at `vim ~/.config/nvim/init.lua`
 
 create folder for configurations on `lua/{user}`
 
-
 # Links
 
 - [How to do 90% of What Plugins do](https://www.youtube.com/watch?v=XA2WjJbmmoM&list=PLOtQYb9WRfK_gzHJrE_sEbplghJsQXowZ&index=12)
 - [Nvim From Scrath](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 
 - [Awesome Nvim](https://github.com/rockerBOO/awesome-neovim)
-
-
